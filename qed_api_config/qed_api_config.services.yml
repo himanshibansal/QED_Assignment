@@ -1,0 +1,5 @@
+services:
+  qed_api_config.route_subscriber:
+    class: Drupal\qed_api_config\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

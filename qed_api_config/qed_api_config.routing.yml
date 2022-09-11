@@ -1,0 +1,9 @@
+qed_api_config.apiurl:
+  path: '/node_json/{node_id}/{api_key}'
+  defaults:
+    _controller: '\Drupal\qed_api_config\Controller\QedApiConfigController::contentResponse'
+    _title : 'Fetch Node Data'
+  requirements: 
+    _permission: 'access content'
+    node_id: \d+
+    api_key: ^[a-zA-Z0-9]+
